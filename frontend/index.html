@@ -1420,9 +1420,7 @@ body.light-theme .senha-btn { background: #334155; }
       const h = String(location.hostname || "").toLowerCase();
       const isLocal = (h === "localhost" || h === "127.0.0.1");
       if (isLocal) return "http://localhost:10000";
-
-      // qualquer produção usa a API no Render
-      return "https://controle-pagamentos-api-v3.onrender.com";
+      return "https://controle-pagamentos-v4.onrender.com";
     })();
 
     const AUTH_TOKEN_KEY = "controle_pagamentos_token";
